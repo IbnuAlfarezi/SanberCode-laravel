@@ -1,4 +1,8 @@
-<x-layout title="Home Page">
+@extends('layout.layout')
+@section('title', 'Home Page')
+@section('header-content', 'Home')
+
+@section('content')
     <h1 class="text-3xl font-bold text-gray-900 mb-4">SanberBook</h1>
     <h2 class="text-xl font-semibold text-gray-700 mb-2">Social Media Developer Santai Berkualitas</h2>
     <p class="text-gray-600 mb-6">Belajar dan Berbagi agar hidup ini semakin santai dan berkualitas</p>
@@ -14,4 +18,4 @@
         <li>Mendaftar di <a href="/register" class="text-blue-500 underline">Form Sign Up</a></li>
         <li>Selesai</li>
     </ol>
-</x-layout>
+@endsection

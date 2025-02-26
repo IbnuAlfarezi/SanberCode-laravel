@@ -1,4 +1,7 @@
-<x-layout title="Register Page">
+@extends('layout.layout')
+@section('title', 'Register Page')
+@section('header-content', 'Register')
+@section('content')
     <h2 class="text-2xl font-bold text-gray-700 mb-5">Buat Account Baru</h2>
     <form action="/register" method="POST">
         @csrf
@@ -66,5 +69,4 @@
     
         <button type="submit" class="w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600">Sign Up</button>
     </form>
-    </x-layout>
-    
+@endsection
